@@ -63,7 +63,7 @@ header nav {
 
 /* Especificidad 013 */
 header nav a.activo {
-    color: #9C5958;
+    color: #0077DA;
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ header+p {
 
 /* Especificidad 003 */
 header+p a {
-    color: #9C5958;
+    color: #0077DA;
 }
 
 /* Especificidad 002 */
@@ -211,8 +211,7 @@ main section p {
 /* Especificidad 002 */
 main article {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    text-align: center;
+    min-height: 20vmax;
 }
 
 /* Especificidad 003 */
@@ -243,6 +242,10 @@ main article p {
 /* Especificidad 003 */
 main article img {
     width: calc(100vmax / 8);
+}
+
+main article ul {
+    font-size: calc(100vmax / 80);
 }
 
 /* Especificidad 003 */
@@ -307,4 +310,8 @@ main button {
 main span {
     font-size: calc(100vmax / 65);
     font-weight: 650;
+}
+
+p {
+    font-size: calc(100vmax / 75);
 }

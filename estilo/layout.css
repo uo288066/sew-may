@@ -33,7 +33,7 @@ body{
 
 /* Especificidad 002 */
 body p {
-    padding:0 2%; 
+    padding: 0 2%; 
 }
 
 /* Especificidad 002 */
@@ -126,7 +126,6 @@ main p {
     flex: 1 1 100%;
 }
 
-/* INDEX -------------------------------------------------------------------- */
 /* Especificidad 001 */
 section {
     justify-self: center;
@@ -139,11 +138,12 @@ section img {
     padding-top: 1%;
 }
 
-/* AYUDA -------------------------------------------------------------------- */
 /* Especificidad 002 */
 main section {
-    flex: 1 1 28%;
+    flex: 0.6 1 28%;
     padding: 0 2%;
+    max-width: 26vmax;
+    min-height: 35vmax;
 }
 
 main section img {
@@ -161,8 +161,6 @@ main aside ul {
     padding: 0 2%;
 }
 
-/* METEO -------------------------------------------------------------------- */
-
 /* Especificidad 003 */
 main article {
     flex: 1 1 47%;
@@ -173,6 +171,7 @@ main article {
     padding: 1%;
     text-align: center;
     margin-bottom: 1%;
+    max-width: 50vmax;
 }
 
 /* Especificidad 002 */
@@ -196,7 +195,7 @@ main article p {
 
 /* Especificidad 003 */
 main article h2 {
-    padding: 1% 25%;
+    padding: 2% 5%;
 }
 
 /* Especificidad 003 */
@@ -251,7 +250,6 @@ main article article ul li p {
     margin: 0;
 }
 
-/* ARTICLE ----------------------------------------------------------------- */
 /* Especificidad 001 */
 article {
     display: flex;
