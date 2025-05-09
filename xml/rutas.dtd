@@ -1,0 +1,51 @@
+<!ELEMENT rutas (ruta+)>
+
+<!ELEMENT ruta (fechaInicio?, horaInicio?, descripcion, personas, inicio, referencias, hitos, planimetria, altimetria)>
+<!ATTLIST ruta
+  nombre CDATA #REQUIRED
+  tipo CDATA #REQUIRED
+  transporte CDATA #REQUIRED
+  duracion CDATA #REQUIRED
+  agencia CDATA #REQUIRED
+  recomendacion CDATA #REQUIRED
+>
+
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT horaInicio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT personas (#PCDATA)>
+
+<!ELEMENT inicio (lugar, direccion, coordenadas)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT coordenadas EMPTY>
+<!ATTLIST coordenadas
+  latitud CDATA #REQUIRED
+  longitud CDATA #REQUIRED
+  altitud CDATA #REQUIRED
+>
+
+<!ELEMENT referencias (referencia+)>
+<!ELEMENT referencia (#PCDATA)>
+
+<!ELEMENT hitos (hito+)>
+
+<!ELEMENT hito (descripcion, coordenadas, distancia, fotos, videos?)>
+<!ATTLIST hito
+  nombre CDATA #REQUIRED
+>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+  unidad CDATA #REQUIRED
+>
+
+<!ELEMENT fotos (foto+)>
+<!ELEMENT foto (#PCDATA)>
+
+<!ELEMENT videos (video*)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT planimetria (#PCDATA)> <!-- nombre del archivo KML -->
+<!ELEMENT altimetria (#PCDATA)>  <!-- nombre del archivo SVG -->

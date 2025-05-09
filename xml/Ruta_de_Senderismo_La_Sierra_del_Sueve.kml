@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Ruta de Senderismo La Sierra del Sueve</name>
+<Placemark>
+    <name>Punto de Inicio</name>
+    <Point>
+        <coordinates>-5.2300,43.4550,150</coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Tramos de la Ruta</name>
+    <LineString>
+        <coordinates>
+            -5.2300,43.4550,150
+            -5.2400,43.4600,1160
+            -5.2450,43.4630,900
+            -5.2500,43.4670,800
+            -5.2550,43.4700,950
+        </coordinates>
+    </LineString>
+</Placemark>
+</Document>
+</kml>

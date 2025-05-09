@@ -1,0 +1,311 @@
+/* Olga Alonso Grela UO288066 */
+
+/*
+- COLORES -----------------
+azul claro (fondo):  E0E7E7
+azul (titulos):      0077DA
+azul oscuro (letra): 325375
+granate:             9C5958
+---------------------------
+*/
+
+/* Especificidad 001 */
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #E0E7E7;
+    color: #325375;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100%;
+}
+
+/* Especificidad 001 */
+h1 {
+    font-size: calc(100vmax / 35);
+}
+
+/* Especificidad 001 */
+h2 {
+    font-size: calc(100vmax / 45);
+}
+
+/* Especificidad 001 */
+h3 {
+    font-size: calc(100vmax / 55);
+}
+
+/* Especificidad 011 */
+a:hover {
+    color: #ce44ce;
+}
+
+/* HEADER ------------------------------------------------------------------ */
+
+/* Especificidad 001 */
+header {
+    background-color: white;
+    color: #0077da;
+}
+
+/* Especificidad 002 */
+header a {
+    color: #0077da;
+    /* Advertencia: color de primer plano establecido sin color de fondo */
+    text-decoration: none;
+}
+
+/* Especificidad 002 */
+header nav {
+    font-size: calc(100vmax / 60);
+}
+
+/* Especificidad 013 */
+header nav a.activo {
+    color: #9C5958;
+    font-weight: bold;
+}
+
+/* Especificidad 002 */
+header+p {
+    font-size: calc(100vmax / 95);
+}
+
+/* Especificidad 003 */
+header+p a {
+    color: #9C5958;
+}
+
+/* ASIDE ------------------------------------------------------------------- */
+
+/* Especificidad 002 */
+aside ol {
+    font-size: calc(100vmax / 80);
+    font-weight: bold;
+}
+
+/* Especificidad 003 */
+aside ol li {
+    font-size: calc(100vmax / 65);
+    font-weight: normal;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Especificidad 002 */
+aside ul {
+    font-size: calc(100vmax / 60);
+    font-weight: bold;
+}
+
+aside h4 {
+    font-size: calc(100vmax / 70);
+    color: #0077DA;
+}
+
+/* Especificidad 003 */
+aside ul li {
+    font-size: 65%;
+    font-weight: normal;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 1%;
+}
+
+aside ul li a.hover {
+    color: #ce44ce; 
+}
+
+aside ul li a {
+    color: #0077DA;
+}
+
+/* Especificidad 005 */
+aside ul li ul li {
+    font-size: 65%;
+    border-style: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    list-style: circle;
+}
+
+/* Especificidad 004 */
+aside ul li img {
+    max-width: 100%;
+    border-radius: 1%;
+}
+ 
+/* DL ---------------------------------------------------------------------- */
+/* Especificidad 001 */
+dl {
+    width: 100%;
+}
+
+/* Especificidad 002 */
+dl dt {
+    font-weight: bold;
+    color: #0077da;
+    width: 100%;
+}
+
+/* TABLE ------------------------------------------------------------------- */
+/* Especificidad 001 */
+table {
+    justify-self: center;
+    border-collapse: separate;
+    width: 75%;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Especificidad 002 */
+table caption {
+    font-size: 90%;
+}
+
+/* Especificidad 001 */
+tr {
+    background-color: white;
+    border: 1px solid white;
+}
+
+/* Especificidad 001 */
+th {
+    color: white;
+    background-color: #325375;
+    border: 1px solid #325375;
+}
+
+/* VIDEO ------------------------------------------------------------------- */
+/* Especificidad 002 */
+main video {
+    width: 20%;
+    justify-self: center;
+    border-radius: 1%;
+}
+
+/* MAIN -------------------------------------------------------------------- */
+
+/* Especificidad 002 */
+main section {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Especificidad 003 */
+main section h3 {
+    font-size: calc(100vmax / 65);
+    color: #0077DA
+}
+
+main section p {
+    font-size: calc(100vmax / 75);
+}
+
+/* Especificidad 002 */
+main article {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    text-align: center;
+}
+
+/* Especificidad 003 */
+main article h2 {
+    font-size: calc(100vmax / 60);
+    background-color: #0077DA;
+    max-width: 100%;
+    border-radius: 4px;
+    color: white
+}
+
+/* Especificidad 003 */
+main article h3 {
+    font-size: calc(100vmax / 70);
+    color: #0077DA; 
+}
+
+/* Especificidad 004 */
+main article h2 a {
+    color: white;
+}
+
+/* Especificidad 003 */
+main article p {
+    font-size: calc(100vmax / 80);
+}
+
+/* Especificidad 003 */
+main article img {
+    width: calc(100vmax / 8);
+}
+
+/* Especificidad 003 */
+main article article {
+    text-align: center;
+    box-shadow: none;
+}
+
+/* Especificidad 004 */
+main article aside img {
+    width: 80%;
+}
+
+/* Especificidad 004 */
+main article aside article{
+    object-fit: contain;
+}
+
+/* Especificidad 002 */
+form label {
+    font-size: calc(100vmax / 80);
+}
+
+
+/* INDEX ------------------------------------------------------------------- */
+
+/* Especificidad 002 */
+section img {
+    width: calc(100vmax / 3);
+    height: auto;
+    background-color: white;
+    border-radius: 2%;
+}
+
+section ul li img {
+    width: auto;
+    height: calc(100vmax / 10);
+}
+
+/* ARTICLE ----------------------------------------------------------------- */
+/* Especificidad 001 */
+article {
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* Especificidad 003 */
+article picture img {
+    width: calc(100vmax / 4.5);
+    height: auto;
+    border-radius: 1%;
+}
+
+main button {
+    font-size: calc(100vmax / 60);
+    background-color: #0077DA;
+    border-color: white;
+    border-radius: 10px;
+    font-weight: 650;
+    color: white;
+}
+
+main span {
+    font-size: calc(100vmax / 65);
+    font-weight: 650;
+}

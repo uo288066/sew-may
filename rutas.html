@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Olga Alonso Grela" />
+    <meta name="description" content="Proyecto extraordinaria SEW" />
+    <meta name="keywords" content="EX" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="rutas" href="rutas.html" />
+    <link rel="icon" type="image/x-icon" href="multimedia/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-omnivore@0.4.0/leaflet-omnivore.min.js"></script>
+    <title>rutas</title>
+</head> 
+
+<body>
+    <header>
+        <h1><a href="index.html" title="Caravia">CARAVIA</a></h1>
+        <nav>
+            <a href="index.html" title="Inicio">Inicio</a>
+            <a href="gastronomia.html" title="Gastronomia ">Gastronomía</a>
+            <a class="activo"  href="rutas.html" title="Rutas">Rutas</a>
+            <a href="meteorologia.html" title="Meteorologia">Meteorología</a>
+            <a href="juego.html" title="Juego">Juego</a>
+            <a href="php/reservas.php" title="Reservas">Reservas</a>
+            <a href="ayuda.html" title="Ayuda">Ayuda</a>
+        </nav>
+    </header>
+    <p>Estás en <a href="index.html">Inicio</a> | Rutas</p>
+
+    <main></main>
+
+    <script src="js/rutas.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ruta = new Ruta();
+            ruta.verXML();
+        });
+    </script>
+
+</body>
+
+</html>

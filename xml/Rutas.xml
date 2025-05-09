@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="xml/rutas.xsd">
+
+    <ruta>
+        <nombre>Senda Costera de Caravia</nombre>
+        <tipo>Paisajística</tipo>
+        <transporte>A pie</transporte>
+        <duracion>3 horas</duracion>
+        <agencia>Sin Agencia</agencia>
+        <descripcion>Ruta costera que ofrece impresionantes vistas del mar Cantábrico y paisajes naturales únicos.</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <inicio>
+            <lugar>Playa de La Espasa</lugar>
+            <direccion>Carretera AS-260</direccion>
+            <coordenadas latitud="43.4502" longitud="-5.2101" altitud="10"/>
+        </inicio>
+        <referencias>
+            <referencia>https://www.turismoasturias.es/descubre/costa/playas/playa-de-la-espasa</referencia>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/senda-costera-de-caravia-12345678</referencia>
+            <referencia>https://www.rutasporgijon.com/rutas/senda-costera-caravia</referencia>
+        </referencias>
+        <valoracion>8</valoracion>
+        <hitos>
+            <hito>
+                <nombre>Playa de La Espasa</nombre>
+                <descripcion>Playa extensa y arenosa con vistas impresionantes al mar.</descripcion>
+                <coordenadas latitud="43.4502" longitud="-5.2101" altitud="10"/>
+                <distancia unidad="metros">0</distancia>
+                <fotos>
+                    <foto>multimedia/img/playa_Espasa.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Mirador del Fitu</nombre>
+                <descripcion>Mirador con vistas panorámicas a la costa y la Sierra del Sueve.</descripcion>
+                <coordenadas latitud="43.4571" longitud="-5.2187" altitud="580"/>
+                <distancia unidad="metros">1500</distancia>
+                <fotos>
+                    <foto>multimedia/img/carrusel/carrusel2.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Área Recreativa del Puntal</nombre>
+                <descripcion>Zona verde ideal para descansar y disfrutar del entorno.</descripcion>
+                <coordenadas latitud="43.4600" longitud="-5.2250" altitud="15"/>
+                <distancia unidad="metros">3000</distancia>
+                <fotos>
+                    <foto>multimedia/img/puntal.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Playa de Moracey</nombre>
+                <descripcion>Playa aislada de gran belleza natural, ideal para la contemplación.</descripcion>
+                <coordenadas latitud="43.4650" longitud="-5.2300" altitud="5"/>
+                <distancia unidad="metros">4500</distancia>
+                <fotos>
+                    <foto>multimedia/img/playa_moracei.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Acantilados de Caravia</nombre>
+                <descripcion>Impresionantes acantilados con vistas al mar Cantábrico.</descripcion>
+                <coordenadas latitud="43.4700" longitud="-5.2350" altitud="30"/>
+                <distancia unidad="metros">6000</distancia>
+                <fotos>
+                    <foto>multimedia/img/acantilados.jpg</foto>
+                </fotos>
+            </hito>
+        </hitos>
+
+        <Planimetria archivo="xml/Senda_Costera_de_Caravia.kml"/>
+        <Altimetria archivo="xml/Senda_Costera_de_Caravia.svg"/>
+    </ruta>
+
+    <ruta>
+        <nombre>Ruta Cicloturista de Caravia</nombre>
+        <tipo>Paisajística y Cultural</tipo>
+        <transporte>Bicicleta</transporte>
+        <duracion>3 horas</duracion>
+        <agencia>Sin Agencia</agencia>
+        <descripcion>Ruta en bicicleta que recorre tanto la costa como monumentos históricos del concejo de Caravia.</descripcion>
+        <publico>Personas en buena forma física</publico>
+        <inicio>
+            <lugar>Plaza del Ayuntamiento de Caravia</lugar>
+            <direccion>Calle Mayor</direccion>
+            <coordenadas latitud="43.4400" longitud="-5.2200" altitud="15"/>
+        </inicio>
+        <referencias>
+            <referencia>https://www.cicloturismoasturias.com/caravia</referencia>
+            <referencia>https://es.wikiloc.com/rutas-bici/ruta-cicloturista-caravia-87654321</referencia>
+            <referencia>https://www.turismoasturias.es/descubre/municipios/caravia</referencia>
+        </referencias>
+        <valoracion>7</valoracion>
+        <hitos>
+            <hito>
+                <nombre>Plaza del Ayuntamiento</nombre>
+                <descripcion>Punto de inicio de la ruta con edificios tradicionales asturianos.</descripcion>
+                <coordenadas latitud="43.4400" longitud="-5.2200" altitud="15"/>
+                <distancia unidad="km">0</distancia>
+                <fotos>
+                    <foto>multimedia/img/ayuntamiento.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Iglesia de Santiago de Caravia</nombre>
+                <descripcion>Iglesia histórica prerrománica.</descripcion>
+                <coordenadas latitud="43.4450" longitud="-5.2255" altitud="20"/>
+                <distancia unidad="km">2</distancia>
+                <fotos>
+                    <foto>multimedia/img/iglesia.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Ermita de San Roque</nombre>
+                <descripcion>Pequeña ermita con gran significado cultural y religioso.</descripcion>
+                <coordenadas latitud="43.4500" longitud="-5.2305" altitud="25"/>
+                <distancia unidad="km">4</distancia>
+                <fotos>
+                    <foto>multimedia/img/ermita.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Área Recreativa de Prado</nombre>
+                <descripcion>Zonas verdes con merenderos y espacios para descansar.</descripcion>
+                <coordenadas latitud="43.4550" longitud="-5.2355" altitud="30"/>
+                <distancia unidad="km">6</distancia>
+                <fotos>
+                    <foto>multimedia/img/prado.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Playa de Arenal de Morís</nombre>
+                <descripcion>Playa extensa de arena dorada con oleaje moderado.</descripcion>
+                <coordenadas latitud="43.4600" longitud="-5.2400" altitud="5"/>
+                <distancia unidad="km">8</distancia>
+                <fotos>
+                    <foto>multimedia/img/arenal.jpg</foto>
+                </fotos>
+            </hito>
+        </hitos>
+
+        <Planimetria archivo="xml/Ruta_Cicloturista_de_Caravia.kml"/>
+        <Altimetria archivo="xml/Ruta_Cicloturista_de_Caravia.svg"/>
+    </ruta>
+
+    <ruta>
+        <nombre>Ruta de Senderismo La Sierra del Sueve</nombre>
+        <tipo>Senderismo</tipo>
+        <transporte>A pie</transporte>
+        <duracion>5 horas</duracion>
+        <agencia>Sin Agencia</agencia>
+        <descripcion>Una desafiante ruta de senderismo que atraviesa la Sierra del Sueve, con paisajes montañosos y vistas espectaculares.</descripcion>
+        <publico>Personas en buena forma física</publico>
+        <inicio>
+            <lugar>Pueblo de Carrales</lugar>
+            <direccion>Camino Rural</direccion>
+            <coordenadas latitud="43.4550" longitud="-5.2300" altitud="150"/>
+        </inicio>
+        <referencias>
+            <referencia>https://es.wikiloc.com/rutas-senderismo/sierra-del-sueve-12349876</referencia>
+            <referencia>https://www.turismoasturias.es/senderismo/sierra-del-sueve</referencia>
+            <referencia>https://www.rutasmontaneras.com/sierra-del-sueve</referencia>
+        </referencias>
+        <valoracion>9</valoracion>
+        <hitos>
+            <hito>
+                <nombre>Pueblo de Carrales</nombre>
+                <descripcion>Punto de inicio con vistas panorámicas y ambiente rural.</descripcion>
+                <coordenadas latitud="43.4550" longitud="-5.2300" altitud="150"/>
+                <distancia unidad="metros">0</distancia>
+                <fotos>
+                    <foto>multimedia/img/carrales.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Mirador del Picu Pienzu</nombre>
+                <descripcion>El punto más alto de la Sierra del Sueve con vistas inigualables.</descripcion>
+                <coordenadas latitud="43.4600" longitud="-5.2400" altitud="1160"/>
+                <distancia unidad="metros">2000</distancia>
+                <fotos>
+                    <foto>multimedia/img/pienzu.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Bosque de Hayas</nombre>
+                <descripcion>Un impresionante bosque de hayas en plena montaña.</descripcion>
+                <coordenadas latitud="43.4630" longitud="-5.2450" altitud="900"/>
+                <distancia unidad="metros">4000</distancia>
+                <fotos>
+                    <foto>multimedia/img/haya.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Fuente de los Asturcones</nombre>
+                <descripcion>Zona donde pueden observarse los famosos caballos asturcones.</descripcion>
+                <coordenadas latitud="43.4670" longitud="-5.2500" altitud="800"/>
+                <distancia unidad="metros">6000</distancia>
+                <fotos>
+                    <foto>multimedia/img/asturcones.jpg</foto>
+                </fotos>
+            </hito>
+            <hito>
+                <nombre>Collado de Beluenzu</nombre>
+                <descripcion>Un collado con vistas espectaculares y entorno natural intacto.</descripcion>
+                <coordenadas latitud="43.4700" longitud="-5.2550" altitud="950"/>
+                <distancia unidad="metros">8000</distancia>
+                <fotos>
+                    <foto>multimedia/img/collado.jpg</foto>
+                </fotos>
+            </hito>
+        </hitos>
+
+        <Planimetria archivo="xml/Ruta_de_Senderismo_La_Sierra_del_Sueve.kml"/>
+        <Altimetria archivo="xml/Ruta_de_Senderismo_La_Sierra_del_Sueve.svg"/>
+    </ruta>
+
+</rutas>

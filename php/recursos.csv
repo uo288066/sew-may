@@ -1,0 +1,6 @@
+rid,cid,nombre,descripcion,precio,plazas,fecha_inicio,fecha_fin,estado
+1,1,Museo de Caravia,Museo dedicado a la historia local de Caravia.,10.00,30,2025-06-01 10:00:00,2025-06-01 18:00:00,Disponible
+2,2,Ruta de los Acantilados,Recorrido por los impresionantes acantilados de Caravia.,15.00,20,2025-06-02 09:00:00,2025-06-02 17:00:00,Disponible
+3,3,Restaurante El Mar,Restaurante con cocina asturiana en el centro de Caravia.,25.00,40,2025-06-03 13:00:00,2025-06-03 23:00:00,Disponible
+4,4,Hotel Caravia,Alojamiento de 4 estrellas en el corazón de Caravia.,100.00,50,2025-06-04 14:00:00,2025-06-04 12:00:00,Disponible
+5,5,Excursión a la Cueva,Aventura subterránea explorando una cueva local.,30.00,10,2025-06-05 10:00:00,2025-06-05 14:00:00,Disponible

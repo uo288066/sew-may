@@ -1,0 +1,6 @@
+uuid,nombre,correo,contrasena,fecha_registro
+1,Juan Pérez,juan@example.com,contraseña123,2025-05-08
+2,Ana López,ana@example.com,contraseña456,2025-05-07
+3,Carlos García,carlos@example.com,contraseña789,2025-05-06
+4,María Sánchez,maria@example.com,contraseña101,2025-05-05
+5,Luis Martínez,luis@example.com,contraseña202,2025-05-04
