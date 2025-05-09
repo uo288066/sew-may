@@ -3,65 +3,46 @@ class Meteo {
     }
 
     cargarDatosMeteo() {
-    const lat = 43.4672201;
-    const lon = -5.1878242;
-    const apiKey = "6a8c88d5dfc3c77a60ac49819cabd17a";
-    const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=es&mode=xml`;
+        const lat = 43.4672201;
+        const lon = -5.1878242;
+        const apiKey = "85cb0cb228094d10838155202250905"; // Reemplaza con tu clave API
+        const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lon}&days=7&lang=es`;
 
-    $.ajax({
-        url: url,
-        method: 'GET',
-        dataType: 'xml',
-        success: function(data) {
-            $("main").empty(); // Clear the previous content
+        $.ajax({
+            url: url,
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $("main").empty(); // Clear the previous content
 
-            // Parse the XML response
-            const forecastList = $(data).find('time');
-            let forecastsByDate = {};
+                // Process the forecast for each day
+                const forecastDays = data.forecast.forecastday;
+                forecastDays.forEach(function(forecast) {
+                    const date = new Date(forecast.date);
+                    const formattedDate = date.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+                    const temp = forecast.day.avgtemp_c;
+                    const humidity = forecast.day.avghumidity;
+                    const rain = forecast.day.totalprecip_mm || 0; // Rain (fallback to 0 if no rain data)
+                    const description = forecast.day.condition.text;
+                    const icon = forecast.day.condition.icon;
+                    const iconUrl = `https:${icon}`;
 
-            forecastList.each(function() {
-                const date = $(this).attr('from'); 
-                const day = date.split("T")[0]; 
-
-                // Store the forecast for each day (get the forecast closest to 12:00 UTC)
-                if (!forecastsByDate[day]) {
-                    forecastsByDate[day] = $(this);
-                }
-            });
-
-            // Process the forecasts for each day (limit to 7 days)
-            let daysProcessed = 0;
-            for (let day in forecastsByDate) {
-                // if (daysProcessed >= 7) break;
-
-                const forecast = forecastsByDate[day];
-                const date = forecast.attr('from'); // Date of forecast
-                const formattedDate = new Date(date).toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-                const temp = forecast.find('temperature').attr('max');
-                const humidity = forecast.find('humidity').attr('value');
-                const rain = forecast.find('precipitation').attr('value') || 0; // Rain (fallback to 0 if no rain data)
-                const description = forecast.find('symbol').attr('name');
-                const icono = forecast.find('symbol').attr('var');
-                const iconUrl = `http://openweathermap.org/img/wn/${icono}@2x.png`;
-
-                $("main").append(`
-                    <section>
-                        <img src="${iconUrl}" alt="${description}">
-                        <h3>${formattedDate}</h3>
-                        <p>${description}</p>
-                        <p>${temp}ºC</p>
-                        <p>Humedad: ${humidity}%</p>
-                        <p>Lluvia: ${rain} mm</p>
-                    </section>
-                `);
-
-                daysProcessed++;
+                    $("main").append(`
+                        <section>
+                            <img src="${iconUrl}" alt="${description}">
+                            <h3>${formattedDate}</h3>
+                            <p>${description}</p>
+                            <p>${temp}ºC</p>
+                            <p>Humedad: ${humidity}%</p>
+                            <p>Lluvia: ${rain} mm</p>
+                        </section>
+                    `);
+                });
+            },
+            error: function() {
+                alert("¡No se pudo obtener los datos del pronóstico!");
             }
-        },
-        error: function() {
-            alert("¡No se pudo obtener los datos del pronóstico!");
-        }
-    });
+        });
     }
 
     crearElemento(tipoElemento, texto, insertarAntesDe){
@@ -72,7 +53,7 @@ class Meteo {
 
     verXML(){
         this.crearElemento("h4","Datos","footer");  // Crea un elemento con DOM 
-        this.crearElemento("main","","footer");     // Crea un elemento con DOM para los datos obtenidos con XML
+        this.crearElemento("main","","footer");     // Crea un elemento con DOM para los datos obtenidos con JSON
         this.cargarDatosMeteo();
     }
 }
