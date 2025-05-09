@@ -77,8 +77,6 @@ header+p a {
     color: #9C5958;
 }
 
-/* ASIDE ------------------------------------------------------------------- */
-
 /* Especificidad 002 */
 aside ol {
     font-size: calc(100vmax / 80);
@@ -91,14 +89,13 @@ aside ol li {
     font-weight: normal;
 }
 
-/* ------------------------------------------------------------------------- */
-
 /* Especificidad 002 */
 aside ul {
     font-size: calc(100vmax / 60);
     font-weight: bold;
 }
 
+/* Especificidad 002 */
 aside h4 {
     font-size: calc(100vmax / 70);
     color: #0077DA;
@@ -114,10 +111,12 @@ aside ul li {
     border-radius: 1%;
 }
 
+/* Especificidad 014 */
 aside ul li a.hover {
     color: #ce44ce; 
 }
 
+/* Especificidad 004 */
 aside ul li a {
     color: #0077DA;
 }
@@ -135,30 +134,33 @@ aside ul li img {
     max-width: 100%;
     border-radius: 1%;
 }
- 
-/* DL ---------------------------------------------------------------------- */
+
 /* Especificidad 001 */
 dl {
+    font-size: calc(100vmax / 50);
     width: 100%;
 }
 
 /* Especificidad 002 */
 dl dt {
+    font-size: calc(100vmax / 50);
     font-weight: bold;
     color: #0077da;
     width: 100%;
 }
 
-/* TABLE ------------------------------------------------------------------- */
 /* Especificidad 001 */
 table {
+    font-size: calc(100vmax / 55);
     justify-self: center;
     border-collapse: separate;
     width: 75%;
 }
 
+/* Especificidad 001 */
 th,
 td {
+    font-size: calc(100vmax / 65);
     text-align: center;
     vertical-align: middle;
 }
@@ -181,15 +183,12 @@ th {
     border: 1px solid #325375;
 }
 
-/* VIDEO ------------------------------------------------------------------- */
 /* Especificidad 002 */
 main video {
-    width: 20%;
+    max-height: calc(100vmax / 2);
     justify-self: center;
     border-radius: 1%;
 }
-
-/* MAIN -------------------------------------------------------------------- */
 
 /* Especificidad 002 */
 main section {
@@ -204,6 +203,7 @@ main section h3 {
     color: #0077DA
 }
 
+/* Especificidad 003 */
 main section p {
     font-size: calc(100vmax / 75);
 }
@@ -266,9 +266,6 @@ form label {
     font-size: calc(100vmax / 80);
 }
 
-
-/* INDEX ------------------------------------------------------------------- */
-
 /* Especificidad 002 */
 section img {
     width: calc(100vmax / 3);
@@ -277,12 +274,12 @@ section img {
     border-radius: 2%;
 }
 
+/* Especificidad 004 */
 section ul li img {
     width: auto;
     height: calc(100vmax / 10);
 }
 
-/* ARTICLE ----------------------------------------------------------------- */
 /* Especificidad 001 */
 article {
     background-color: white;
@@ -296,6 +293,7 @@ article picture img {
     border-radius: 1%;
 }
 
+/* Especificidad 002 */
 main button {
     font-size: calc(100vmax / 60);
     background-color: #0077DA;
@@ -305,6 +303,7 @@ main button {
     color: white;
 }
 
+/* Especificidad 002 */
 main span {
     font-size: calc(100vmax / 65);
     font-weight: 650;

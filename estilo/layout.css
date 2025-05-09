@@ -26,15 +26,16 @@ h2 {
     text-align: center;
 }
 
+/* Especificidad 001 */
 body{
     text-align: center;
 }
 
+/* Especificidad 002 */
 body p {
     padding:0 2%; 
 }
 
-/* ASIDE ------------------------------------------------------------------- */
 /* Especificidad 002 */
 aside ul {
     display: flex;
@@ -71,9 +72,6 @@ aside ol {
     justify-self: center;
 }
 
-
-
-/* DL ---------------------------------------------------------------------- */
 /* Especificidad 001 */
 dl {
     justify-self: center;
@@ -91,10 +89,9 @@ dl dt {
 dl dd {
     text-align: center;
     justify-self: center;
-    width: 50%
+    min-width: 70%;
+    max-width: 90%;
 }
-
-/* TABLE ------------------------------------------------------------------- */
 
 /* Especificidad 002 */
 table caption {
@@ -106,13 +103,11 @@ td {
     padding: 0 2%;
 }
 
-/* VIDEO -------------------------------------------------------------------- */
 /* Especificidad 001 */
 video {
     display: block;
 } 
 
-/* MAIN --------------------------------------------------------------------- */
 /* Especificidad 001 */
 main {
     display: flex;
@@ -123,8 +118,10 @@ main {
     justify-content: space-around;
     row-gap: calc(100vmax / 85);
     width: 100%;
+    column-gap: calc(100vmax / 85);
 }
 
+/* Especificidad 002 */
 main p {
     flex: 1 1 100%;
 }
@@ -145,8 +142,8 @@ section img {
 /* AYUDA -------------------------------------------------------------------- */
 /* Especificidad 002 */
 main section {
-    flex: 0 0 28%;
-    padding: 0 2%
+    flex: 1 1 28%;
+    padding: 0 2%;
 }
 
 main section img {
@@ -161,14 +158,14 @@ main section h3 {
 /* Especificidad 002 */
 main aside ul {
     flex: 0 0 45%;
-    padding: 0 2%
+    padding: 0 2%;
 }
 
 /* METEO -------------------------------------------------------------------- */
 
 /* Especificidad 003 */
 main article {
-    flex: 0 1 47%;
+    flex: 1 1 47%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -192,6 +189,7 @@ main form {
     column-gap: 1%;
 }
 
+/* Especificidad 003 */
 main article p {
     margin: 1%;
 }
@@ -202,9 +200,6 @@ main article h2 {
 }
 
 /* Especificidad 003 */
-main article h3 {
-}
-
 main article aside {
     justify-items: center;
 }
@@ -220,16 +215,19 @@ main article aside article {
     max-width: 85%;
 }
 
+/* Especificidad 004 */
 main article article ul {
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
 }
 
+/* Especificidad 003 */
 main article article {
     padding-right: 10%;
 }
 
+/* Especificidad 005 */
 main article article ul li{
     flex: 1 1 45%;
     display: flex;
@@ -241,12 +239,14 @@ main article article ul li{
     align-self: start;
 }
 
+/* Especificidad 006 */
 main article article ul li img {
     height: calc(100vmax / 15);
     width: auto;
     object-fit: contain;
 }
 
+/* Especificidad 00 */
 main article article ul li p {
     margin: 0;
 }
