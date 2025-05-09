@@ -30,7 +30,7 @@ class Noticias {
 
     cargarNoticias() {
         const self = this;
-        const url = 'https://newsapi.org/v2/everything?q=Asturias&apiKey=949b922f2b504af58b76805646bed895&pageSize=5&language=es';
+        const url = 'https://newsapi.org/v2/everything?q=Asturias&apiKey=949b922f2b504af58b76805646bed895&pageSize=10&language=es';
 
         $.getJSON(url, function(datos) {
             const totalResultados = datos.totalResults;
